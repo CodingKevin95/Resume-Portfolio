@@ -1,0 +1,85 @@
+.homeBackground {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #776343d0; */
+    background-color: rgba(0, 0, 0, 0.712);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameIntro{
+    font-weight: bold;
+    text-align: start;
+    /* color: black; */
+    color: white;
+    font-size: 3rem;
+    margin: 0
+}
+
+.nameIntro.second{
+    color: rgba(255, 255, 255, 0.654);
+}
+
+.heroBanner {
+    position: absolute;
+    /* margin-left: 15em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* line-height: 1.5rem; */
+    margin-top: 4rem;
+    width: 70vw;
+}
+
+.blueLetters {
+    text-align: start;
+    color: #a2b9e1;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.blueLetters .paragraph{
+    max-width: 30rem;
+    /* background-color: orange; */
+}
+
+.contactRow{
+    text-align: start;
+}
+
+.contactBtn {
+    color: white;
+    /* border: 1px black solid; */
+    border-radius: 15px;
+    background-color: #a2b9e1;
+    padding: .5rem;
+}
+
+.contactBtn:hover {
+    background-color: #a2b9e19c;
+}
+
+.contactBox{
+    padding-left: 0;
+}
+
+
+/* @media screen and (max-width: 1200px) {
+    .heroBanner {
+        margin-left: 2rem;
+    }
+} */
+
+@media screen and (max-width: 490px) {
+    .blueLetters {
+        font-size: 1.15rem;
+    }
+
+    .nameIntro{
+        font-size: 2rem;
+    }
+    
+}
