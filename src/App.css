@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
