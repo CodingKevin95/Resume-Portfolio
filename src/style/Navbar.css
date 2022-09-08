@@ -41,6 +41,7 @@ a {
     width: 12rem;
     display: flex;
     justify-content: space-between;
+    padding-left: 3rem;
 }
 
 .contactIcon {
@@ -64,7 +65,8 @@ a {
 }
 
 .nav-menu{
-    display:flex
+    display:flex;
+    padding-right: 3rem;
 }
 
 .nav-menu li {
@@ -86,6 +88,7 @@ a {
     .hamburger{
         display: block;
         z-index: 5;
+        padding-right: 3rem;
      }
 
     .nav-menu {
@@ -106,7 +109,8 @@ a {
         0 -12.5px 10px rgba(0, 0, 0, 0.295),
         0 -22.3px 17.9px rgba(0, 0, 0, 0.206),
         0 -41.8px 33.4px rgba(0, 0, 0, 0.152),
-        0 -100px 80px rgba(0, 0, 0, 0.105)
+        0 -100px 80px rgba(0, 0, 0, 0.105);
+        padding-right: 0;
     }
 
     .active {
@@ -137,6 +141,7 @@ a {
 
     .logo{
         width: 9rem;
+        padding-left: 0;
     }
 
 }

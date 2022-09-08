@@ -1,12 +1,35 @@
 .projectsBackground {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: #373737;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white
+    /* align-items: center; */
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+}
+
+.projectWave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.projectWave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 55px;
+}
+
+.projectWave .shape-fill {
+    fill:  rgb(160, 104, 0);
 }
 
 .projectPhoto {
@@ -17,8 +40,15 @@
 .projects{
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    /* width: 70vw; */
     align-items: center;
+}
+
+.projectsTitle {
+    font-weight: bold;
+    font-size: 4rem;
+    position: relative;
+    top: 5rem;
 }
 
 .projectBtn {
@@ -33,6 +63,7 @@
     background-color: #a2b9e1;
     border: none;
     border-radius: 5px;
+    height: 1.5rem;
 }
 
 .linkBtn:hover {
@@ -46,18 +77,54 @@
 
 .projectGroupLogo {
     /* background-color: antiquewhite; */
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .projectBox {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.308);
     padding: .3rem;
+    margin-top: 5rem;
+    width: 70%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 8px 10px rgba(0, 0, 0, 0.06),
+    0 10px 10px rgba(0, 0, 0, 0.12)
+}
+
+@media screen and (max-width: 828px) {
+    .projectPhoto {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width: 490px) {
+.projectPhoto {
+    width: 78%;
+}    
+
+.projectBox {
+    width: 90%;
+}
+
+.projectGroupLogo {
+    width: 50%;
+}
+
+.projectLogo {
+    padding: 5px;
+}
+
+.projectsTitle {
+    margin-top: -2rem;
+}
 }

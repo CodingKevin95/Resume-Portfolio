@@ -1,22 +1,56 @@
 .aboutBackground {
     height: 100%;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgb(160, 104, 0);
     position: relative;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    /* padding-bottom: 10rem; */
+}
+
+.aboutWave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.aboutWave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 55px;
+}
+
+.aboutWave .shape-fill {
+    fill: #373737;
+}
+
+.aboutMeTitle {
+    font-weight: bold;
+    font-size: 4rem;
+    position: relative;
+    margin: 0
 }
 
 .aboutBanner{
     /* border: black solid 1px; */
     padding: .5rem;
     width: 70vw;
-    margin-top: 6rem;
+    margin-top: 10rem;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.308);
     padding: .3rem;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 8px 10px rgba(0, 0, 0, 0.06),
+    0 10px 10px rgba(0, 0, 0, 0.12)
 }
 
 .aboutMeDescription {
@@ -29,11 +63,13 @@
 
 .catagory{
     display: flex;
-    width: 70vw;
+    /* width: 70vw; */
+    max-width: 970px;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1rem;
-    color: white
+    color: white;
+    margin-bottom: 10rem;
 }
 
 .icons{
@@ -47,6 +83,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: .65rem;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 8px 10px rgba(0, 0, 0, 0.06),
+    0 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 .icons:hover {
@@ -54,8 +98,10 @@
 }
 
 .iconLabel {
-    padding: .2rem;
+    padding: 0;
+    margin: 0;
     border-radius: 7px;
+    font-weight: bold;
     /* background-color: rgba(0, 0, 0, 0.308); */
 }
 
@@ -64,6 +110,7 @@
         transform: rotate(360deg)
     }
 }
+
 
 @media screen and (max-width: 490px) {
     .aboutBanner {
@@ -83,7 +130,7 @@
     }
 
     .aboutBanner{
-        margin-top: 3.5rem;
+        margin-top: 5rem;
     }
 
     .icons{

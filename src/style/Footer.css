@@ -1,0 +1,8 @@
+.footerBox {
+    /* color: black; */
+    height: 15vh;
+    background-color: #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

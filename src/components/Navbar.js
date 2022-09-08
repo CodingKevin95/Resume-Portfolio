@@ -26,7 +26,7 @@ const handleNav = () => {
                     <a href='https://www.linkedin.com/in/kevins-on/' target="_blank" rel="noreferrer">
                         <LinkedInIcon className='contactIcon' sx={{width: {lg:'50px', xs: '35px'}, height: {lg:'50px', xs: '35px'}}}/>
                     </a>
-                    <a href='https://pdfhost.io/v/0iNrMCcYG_KEVIN_SON_resumedocx' target="_blank" rel="noreferrer">
+                    <a href='https://content.celero.io/s/6a752c6b/kevin-son-resumedocx-dragged/' target="_blank" rel="noreferrer">
                         <DescriptionIcon className='contactIcon' sx={{width: {lg:'50px', xs: '35px'}, height: {lg:'50px', xs: '35px'}}}/>
                     </a>
                 </div>

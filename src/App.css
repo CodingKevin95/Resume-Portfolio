@@ -3,6 +3,7 @@
   font-family: 'Roboto Mono', monospace;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .App-logo {
